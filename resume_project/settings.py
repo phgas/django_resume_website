@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "None")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DJANGO_DEBUG", "False")
+DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "phgas.dev"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "phgas.dev"]
 
 
 # Application definition
