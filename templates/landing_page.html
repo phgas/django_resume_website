@@ -6,14 +6,37 @@
 	<title>Philipp Gasser</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<link rel="stylesheet" href="{% static 'css/aos.css' %}">
-	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+	<link rel="preload"
+		href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		as="style"
+		onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	</noscript>
+
+	<!-- Keep ONE stylesheet blocking -->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Load the rest async -->
+	<link rel="preload" href="{% static 'css/animate.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="{% static 'css/aos.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="{% static 'css/icomoon.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="{% static 'css/ionicons.min.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="{% static 'css/open-iconic-bootstrap.min.css' %}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+	<noscript>
+		<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'css/aos.css' %}">
+		<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+		<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+	</noscript>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
